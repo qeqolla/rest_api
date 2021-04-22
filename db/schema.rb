@@ -31,8 +31,12 @@ ActiveRecord::Schema.define(version: 2021_04_22_124127) do
   create_table "reviews", force: :cascade do |t|
     t.string "feedback"
     t.datetime "time"
+    t.bigint "user_id"
+    t.bigint "item_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["item_id"], name: "index_reviews_on_item_id"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

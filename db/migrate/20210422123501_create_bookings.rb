@@ -4,7 +4,6 @@ class CreateBookings < ActiveRecord::Migration[6.1]
       t.date :startRent
       t.date :endRent
 
-
       t.timestamps
     end
   end
