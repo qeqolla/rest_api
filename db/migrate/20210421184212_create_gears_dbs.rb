@@ -12,18 +12,21 @@ class CreateGearsDbs < ActiveRecord::Migration[6.1]
     create_table :item do |t|
       t.string :name
 
+      t.timestamps
     end
 
     create_table :booking do |t|
       t.date :startRent
       t.date :endRent
 
+      t.timestamps
     end
 
     create_table :review do |t|
       t.string :feedback
       t.datetime :time
 
+      t.timestamps
     end
   end
 end
