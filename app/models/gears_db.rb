@@ -1,0 +1,2 @@
+class GearsDb < ApplicationRecord
+end

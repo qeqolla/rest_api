@@ -1,0 +1,2 @@
+class GearsDbsController < ApplicationController
+end
