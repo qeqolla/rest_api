@@ -1,2 +1,0 @@
-class GearsDb < ApplicationRecord
-end
