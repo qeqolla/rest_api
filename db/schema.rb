@@ -28,7 +28,8 @@ ActiveRecord::Schema.define(version: 2021_05_06_131033) do
 
   create_table "cities", force: :cascade do |t|
     t.string "name"
-    t.integer "post_code"
+    t.string "country"
+    t.string "post_code"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
