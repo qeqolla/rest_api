@@ -35,8 +35,10 @@ ActiveRecord::Schema.define(version: 2021_05_06_131033) do
 
   create_table "items", force: :cascade do |t|
     t.string "name"
+    t.bigint "city_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["city_id"], name: "index_items_on_city_id"
   end
 
   create_table "reviews", force: :cascade do |t|

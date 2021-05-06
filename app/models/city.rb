@@ -1,3 +1,4 @@
 class City < ApplicationRecord
-  has_one :user
+  has_many :users, dependent: :destroy
+  has_many :items, dependent: :destroy
 end
