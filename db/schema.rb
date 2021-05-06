@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(version: 2021_04_22_124127) do
   enable_extension "plpgsql"
 
   create_table "bookings", force: :cascade do |t|
-    t.date "startRent"
-    t.date "endRent"
+    t.date "start_rent"
+    t.date "end_rent"
     t.bigint "user_id"
     t.bigint "item_id"
     t.datetime "created_at", precision: 6, null: false
@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 2021_04_22_124127) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.string "lastName"
+    t.string "last_name"
     t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
