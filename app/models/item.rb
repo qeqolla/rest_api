@@ -5,5 +5,5 @@ class Item < ApplicationRecord
   belongs_to :city
 
   scope :get_all_items_in_city, ->(city) { where(city: city) }
-  validate :name, presence: true
+  validates :name, presence: true
 end
